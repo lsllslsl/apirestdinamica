@@ -43,7 +43,10 @@ class GetController{
 
 	}
 
+<<<<<<< HEAD
 	//Ejempl
+=======
+>>>>>>> c78d86f (d)
 
 	/*==================================================================
 	PETICIONES GET CON FILTRO ENTRE TABLAS RELACIONADAS
