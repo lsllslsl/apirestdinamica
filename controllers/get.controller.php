@@ -43,6 +43,8 @@ class GetController{
 
 	}
 
+	//Ejemplo
+
 	/*==================================================================
 	PETICIONES GET CON FILTRO ENTRE TABLAS RELACIONADAS
 	===================================================================*/
