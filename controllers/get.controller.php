@@ -41,7 +41,7 @@ class GetController{
 		$return = new GetController();
 		$return -> fncResponse($response);
 
-		$hola
+	
 
 	}
 
