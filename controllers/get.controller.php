@@ -41,12 +41,9 @@ class GetController{
 		$return = new GetController();
 		$return -> fncResponse($response);
 
-	}
+		$hola
 
-<<<<<<< HEAD
-	//Ejempl
-=======
->>>>>>> c78d86f (d)
+	}
 
 	/*==================================================================
 	PETICIONES GET CON FILTRO ENTRE TABLAS RELACIONADAS
