@@ -1,5 +1,7 @@
 <?php
 
+use FTP\Connection as FTPConnection;
+
 require_once "get.model.php";
 
 class Connection{
@@ -47,6 +49,15 @@ class Connection{
 
 		return $link;
 
+	}
+
+	static public function getColumnsData($table)
+	{
+		$db = Connection::infoDatabase()["database"];
+
+		return Connection::connect()
+		->query("SELECT COLUMN_NAME AS item FROM information_schema.columns WHERE table_schema = '$db' AND table_name = '$table'")
+		->fetchAll(PDO::FETCH_OBJ);
 	}
 
 	

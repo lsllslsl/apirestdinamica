@@ -9,6 +9,10 @@ class GetModel{
 	===================================================================*/
 	static public function getData($table, $select, $orderBy, $orderMode, $startAt, $endAt){
 
+	echo '<pre>'. print_r(Connection::getColumnsData($table)). '</pre>';
+
+	return;
+
 	/*==================================================================
 	Sin ordenar y limitar datos
 	===================================================================*/

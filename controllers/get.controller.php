@@ -11,6 +11,8 @@ class GetController{
 	static public function getData($table, $select, $orderBy, $orderMode,$startAt, $endAt){
 
 		$response = GetModel::getData($table, $select, $orderBy, $orderMode,$startAt, $endAt);
+		echo '<pre>'. print_r($response) . '</pre>';
+		return;
 	
 		$return = new GetController();
 		$return -> fncResponse($response);
