@@ -1,0 +1,520 @@
+[16-Aug-2023 07:51:11 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tbl_records' in 'field list' in C:\xampp\htdocs\apirestdinamica\models\get.model.php:13
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(13): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(9): GetModel::getData('tbl_records', 'tbl_records,nam...')
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(12): GetController::getData('tbl_records', 'tbl_records,nam...')
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 13
+[16-Aug-2023 08:01:58 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tbl_records' in 'field list' in C:\xampp\htdocs\apirestdinamica\models\get.model.php:13
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(13): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(9): GetModel::getData('tbl_records', 'tbl_records')
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(12): GetController::getData('tbl_records', 'tbl_records')
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 13
+[16-Aug-2023 18:46:30 Europe/Berlin] PHP Fatal error:  Uncaught Error: Undefined constant "equalTo" in C:\xampp\htdocs\apirestdinamica\routes\services\get.php:12
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#3 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\routes\services\get.php on line 12
+[16-Aug-2023 18:46:30 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'favicon.ico' doesn't exist in C:\xampp\htdocs\apirestdinamica\models\get.model.php:13
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(13): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(9): GetModel::getData('favicon.ico', '*')
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(17): GetController::getData('favicon.ico', '*')
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 13
+[16-Aug-2023 18:46:36 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'favicon.ico' doesn't exist in C:\xampp\htdocs\apirestdinamica\models\get.model.php:13
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(13): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(9): GetModel::getData('favicon.ico', '*')
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(17): GetController::getData('favicon.ico', '*')
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 13
+[16-Aug-2023 18:46:48 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'favicon.ico' doesn't exist in C:\xampp\htdocs\apirestdinamica\models\get.model.php:13
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(13): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(9): GetModel::getData('favicon.ico', '*')
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(17): GetController::getData('favicon.ico', '*')
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 13
+[16-Aug-2023 19:21:02 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function GetController::getDataFilter(), 3 passed in C:\xampp\htdocs\apirestdinamica\routes\services\get.php on line 18 and exactly 4 expected in C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php:24
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(18): GetController::getDataFilter('tbl_records', 'id_record,name,...', true)
+#1 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php on line 24
+[16-Aug-2023 19:27:20 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'favicon.ico' doesn't exist in C:\xampp\htdocs\apirestdinamica\models\get.model.php:16
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(16): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(13): GetModel::getData('favicon.ico', '*')
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(26): GetController::getData('favicon.ico', '*')
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 16
+[16-Aug-2023 19:43:24 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in C:\xampp\htdocs\apirestdinamica\models\get.model.php:38
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(38): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(26): GetModel::getDataFilter('tbl_records', 'id_record,name,...', 'number,city', '6_Huejotzingo')
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(18): GetController::getDataFilter('tbl_records', 'id_record,name,...', 'number,city', '6_Huejotzingo')
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 38
+[16-Aug-2023 20:29:06 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE id_record = '1'' at line 1 in C:\xampp\htdocs\apirestdinamica\models\get.model.php:50
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(50): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(26): GetModel::getDataFilter('', 'id_record,name,...', 'id_record', '1')
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(18): GetController::getDataFilter('', 'id_record,name,...', 'id_record', '1')
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 50
+[16-Aug-2023 21:48:59 Europe/Berlin] PHP Warning:  Undefined variable $column in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 12
+[16-Aug-2023 21:48:59 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC' at line 1 in C:\xampp\htdocs\apirestdinamica\models\get.model.php:16
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(16): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(13): GetModel::getData('tbl_records', '*')
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(26): GetController::getData('tbl_records', '*')
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 16
+[16-Aug-2023 22:07:04 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in C:\xampp\htdocs\apirestdinamica\models\get.model.php:60
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(60): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(26): GetModel::getDataFilter('tbl_records', '*', 'id_record', '1', 'city', 'DESC')
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(22): GetController::getDataFilter('tbl_records', '*', 'id_record', '1', 'city', 'DESC')
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 60
+[16-Aug-2023 22:08:03 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in C:\xampp\htdocs\apirestdinamica\models\get.model.php:60
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(60): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(26): GetModel::getDataFilter('tbl_records', '*', 'id_record', '1', 'city', 'DESC')
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(22): GetController::getDataFilter('tbl_records', '*', 'id_record', '1', 'city', 'DESC')
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 60
+[16-Aug-2023 22:08:20 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in C:\xampp\htdocs\apirestdinamica\models\get.model.php:60
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(60): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(26): GetModel::getDataFilter('tbl_records', '*', 'id_record', '1', 'city', 'DESC')
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(22): GetController::getDataFilter('tbl_records', '*', 'id_record', '1', 'city', 'DESC')
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 60
+[16-Aug-2023 22:08:59 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in C:\xampp\htdocs\apirestdinamica\models\get.model.php:60
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(60): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(26): GetModel::getDataFilter('tbl_records', '*', 'id_record', '1', 'city', 'DESC')
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(22): GetController::getDataFilter('tbl_records', '*', 'id_record', '1', 'city', 'DESC')
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 60
+[16-Aug-2023 22:24:53 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'favicon.ico' doesn't exist in C:\xampp\htdocs\apirestdinamica\models\get.model.php:21
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(21): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(13): GetModel::getData('favicon.ico', '*', NULL, NULL)
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(30): GetController::getData('favicon.ico', '*', NULL, NULL)
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 21
+[16-Aug-2023 23:08:33 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list' in C:\xampp\htdocs\apirestdinamica\models\get.model.php:50
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(50): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(13): GetModel::getData('tbl_banks', 'name', NULL, NULL, NULL, '5')
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(31): GetController::getData('tbl_banks', 'name', NULL, NULL, NULL, '5')
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 50
+[16-Aug-2023 23:09:51 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function GetController::getData(), 4 passed in C:\xampp\htdocs\apirestdinamica\routes\services\get.php on line 31 and exactly 6 expected in C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php:11
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(31): GetController::getData('tbl_banks', 'descrip_banks', NULL, NULL)
+#1 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php on line 11
+[16-Aug-2023 23:48:19 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'favicon.ico' doesn't exist in C:\xampp\htdocs\apirestdinamica\models\get.model.php:48
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(48): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(13): GetModel::getData('favicon.ico', '*', NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(31): GetController::getData('favicon.ico', '*', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 48
+[16-Aug-2023 23:48:33 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'favicon.ico' doesn't exist in C:\xampp\htdocs\apirestdinamica\models\get.model.php:48
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(48): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(13): GetModel::getData('favicon.ico', '*', NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(31): GetController::getData('favicon.ico', '*', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 48
+[17-Aug-2023 00:17:05 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'lexa.relations' doesn't exist in C:\xampp\htdocs\apirestdinamica\models\get.model.php:48
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(48): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(13): GetModel::getData('relations', '*', NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(31): GetController::getData('relations', '*', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 48
+[17-Aug-2023 00:41:25 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tbl_record' in 'field list' in C:\xampp\htdocs\apirestdinamica\models\get.model.php:48
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(48): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(39): GetModel::getData('tbl_records,tbl...', 'tbl_record,tbl_...', '*', NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(31): GetController::getRelData('tbl_records,tbl...', 'tbl_record,tbl_...', '*', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 48
+[17-Aug-2023 00:46:46 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tbl_record' in 'field list' in C:\xampp\htdocs\apirestdinamica\models\get.model.php:48
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(48): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(39): GetModel::getData('tbl_records,tbl...', 'tbl_record,tbl_...', '*', NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(31): GetController::getRelData('tbl_records,tbl...', 'tbl_record,tbl_...', '*', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 48
+[17-Aug-2023 02:10:10 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tbl_records.id_tbl_document_tbl_record' in 'on clause' in C:\xampp\htdocs\apirestdinamica\models\get.model.php:193
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(193): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(39): GetModel::getRelData('tbl_records,tbl...', 'tbl_record,tbl_...', '*', NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(31): GetController::getRelData('tbl_records,tbl...', 'tbl_record,tbl_...', '*', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 193
+[17-Aug-2023 02:10:27 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tbl_records.id_tbl_document_tbl_record' in 'on clause' in C:\xampp\htdocs\apirestdinamica\models\get.model.php:193
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(193): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(39): GetModel::getRelData('tbl_records,tbl...', 'tbl_record,tbl_...', '*', NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(31): GetController::getRelData('tbl_records,tbl...', 'tbl_record,tbl_...', '*', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 193
+[17-Aug-2023 02:11:00 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tbl_records.id_tbl_document_tbl_record' in 'on clause' in C:\xampp\htdocs\apirestdinamica\models\get.model.php:193
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(193): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(39): GetModel::getRelData('tbl_records,tbl...', 'tbl_record,tbl_...', '*', NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(31): GetController::getRelData('tbl_records,tbl...', 'tbl_record,tbl_...', '*', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 193
+[17-Aug-2023 02:11:30 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tbl_records.id_tbl_document_tbl_record' in 'on clause' in C:\xampp\htdocs\apirestdinamica\models\get.model.php:193
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(193): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(39): GetModel::getRelData('tbl_records,tbl...', 'tbl_record,tbl_...', '*', NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(31): GetController::getRelData('tbl_records,tbl...', 'tbl_record,tbl_...', '*', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 193
+[17-Aug-2023 06:40:59 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'favicon.ico' doesn't exist in C:\xampp\htdocs\apirestdinamica\models\get.model.php:48
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(48): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(13): GetModel::getData('favicon.ico', '*', NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(39): GetController::getData('favicon.ico', '*', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 48
+[17-Aug-2023 17:03:07 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'lexa.tbl_document' doesn't exist in C:\xampp\htdocs\apirestdinamica\models\get.model.php:212
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(212): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(39): GetModel::getRelData('tbl_records,tbl...', 'record,document', '*', NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(31): GetController::getRelData('tbl_records,tbl...', 'record,document', '*', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 212
+[17-Aug-2023 17:04:10 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tbl_status.id_tbl_statu' in 'on clause' in C:\xampp\htdocs\apirestdinamica\models\get.model.php:212
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(212): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(39): GetModel::getRelData('tbl_status,tbl_...', 'tbl_statu,docum...', '*', NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(31): GetController::getRelData('tbl_status,tbl_...', 'tbl_statu,docum...', '*', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 212
+[17-Aug-2023 17:04:21 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tbl_status.id_statu' in 'on clause' in C:\xampp\htdocs\apirestdinamica\models\get.model.php:212
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(212): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(39): GetModel::getRelData('tbl_status,tbl_...', 'statu,document', '*', NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(31): GetController::getRelData('tbl_status,tbl_...', 'statu,document', '*', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 212
+[17-Aug-2023 17:04:29 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tbl_documents.id_status' in 'on clause' in C:\xampp\htdocs\apirestdinamica\models\get.model.php:212
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(212): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(39): GetModel::getRelData('tbl_status,tbl_...', 'status,document', '*', NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(31): GetController::getRelData('tbl_status,tbl_...', 'status,document', '*', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 212
+[17-Aug-2023 17:32:01 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id_record' in order clause is ambiguous in C:\xampp\htdocs\apirestdinamica\models\get.model.php:212
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(212): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(39): GetModel::getRelData('tbl_records,tbl...', 'record,document', '*', 'id_record', 'ASC', '0', '1')
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(31): GetController::getRelData('tbl_records,tbl...', 'record,document', '*', 'id_record', 'ASC', '0', '1')
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 212
+[17-Aug-2023 17:32:09 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id_record' in order clause is ambiguous in C:\xampp\htdocs\apirestdinamica\models\get.model.php:212
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(212): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(39): GetModel::getRelData('tbl_records,tbl...', 'record,document', '*', 'id_record', 'ASC', NULL, NULL)
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(31): GetController::getRelData('tbl_records,tbl...', 'record,document', '*', 'id_record', 'ASC', NULL, NULL)
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 212
+[17-Aug-2023 18:29:22 Europe/Berlin] PHP Warning:  Undefined variable $linkToArray in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 269
+[17-Aug-2023 18:29:22 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 269
+[17-Aug-2023 18:29:22 Europe/Berlin] PHP Warning:  Undefined variable $linkToArray in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 269
+[17-Aug-2023 18:29:22 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 269
+[17-Aug-2023 18:29:22 Europe/Berlin] PHP Warning:  Undefined variable $linkToText in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 269
+[17-Aug-2023 18:29:22 Europe/Berlin] PHP Warning:  Undefined variable $linkToArray in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 304
+[17-Aug-2023 18:29:22 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 304
+[17-Aug-2023 18:29:22 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= :' at line 2 in C:\xampp\htdocs\apirestdinamica\models\get.model.php:309
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(309): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(52): GetModel::getRelDataFilter('tbl_records,tbl...', 'record,document', 'name,number,cit...', 'tbl_records', 'id_record', NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(39): GetController::getRelDataFilter('tbl_records,tbl...', 'record,document', 'name,number,cit...', 'tbl_records', 'id_record', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 309
+[17-Aug-2023 18:29:40 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method PDOStatement::bindParm() in C:\xampp\htdocs\apirestdinamica\models\get.model.php:304
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(52): GetModel::getRelDataFilter('tbl_records,tbl...', 'record,document', 'name,number,cit...', 'tbl_records', Array, NULL, NULL, NULL, NULL)
+#1 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(39): GetController::getRelDataFilter('tbl_records,tbl...', 'record,document', 'name,number,cit...', 'tbl_records', 'id_record', NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#5 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 304
+[17-Aug-2023 18:32:04 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tbl_records' in 'where clause' in C:\xampp\htdocs\apirestdinamica\models\get.model.php:307
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(307): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(52): GetModel::getRelDataFilter('tbl_records,tbl...', 'record,document', 'name,number,cit...', 'tbl_records', Array, NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(39): GetController::getRelDataFilter('tbl_records,tbl...', 'record,document', 'name,number,cit...', 'tbl_records', 'id_record', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 307
+[17-Aug-2023 18:33:10 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tbl_records' in 'where clause' in C:\xampp\htdocs\apirestdinamica\models\get.model.php:307
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(307): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(52): GetModel::getRelDataFilter('tbl_records,tbl...', 'record,document', 'name,number,cit...', 'tbl_records', Array, NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(39): GetController::getRelDataFilter('tbl_records,tbl...', 'record,document', 'name,number,cit...', 'tbl_records', 'id_record', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 307
+[17-Aug-2023 18:51:43 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tbl_records' in 'where clause' in C:\xampp\htdocs\apirestdinamica\models\get.model.php:307
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(307): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(52): GetModel::getRelDataFilter('tbl_records,tbl...', 'record,document', 'name,number,cit...', 'tbl_records', Array, NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(39): GetController::getRelDataFilter('tbl_records,tbl...', 'record,document', 'name,number,cit...', 'tbl_records', 'id_record', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 307
+[17-Aug-2023 19:50:03 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id_record' in field list is ambiguous in C:\xampp\htdocs\apirestdinamica\models\get.model.php:312
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(312): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(52): GetModel::getRelDataFilter('tbl_documents ,...', 'document, redor...', 'id_document,doc...', 'document_name', Array, NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(39): GetController::getRelDataFilter('tbl_documents ,...', 'document, redor...', 'id_document,doc...', 'document_name', 'ine', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 312
+[17-Aug-2023 20:03:36 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id_record' in field list is ambiguous in C:\xampp\htdocs\apirestdinamica\models\get.model.php:308
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(308): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(52): GetModel::getRelDataFilter('tbl_documents ,...', 'document, redor...', 'id_document,doc...', 'id_document', 'ine', NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(39): GetController::getRelDataFilter('tbl_documents ,...', 'document, redor...', 'id_document,doc...', 'id_document', 'ine', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 308
+[17-Aug-2023 20:03:49 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id_record' in field list is ambiguous in C:\xampp\htdocs\apirestdinamica\models\get.model.php:308
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(308): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(52): GetModel::getRelDataFilter('tbl_documents ,...', 'document, redor...', 'id_document,doc...', 'id_document', Array, NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(39): GetController::getRelDataFilter('tbl_documents ,...', 'document, redor...', 'id_document,doc...', 'id_document', 'ine', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 308
+[17-Aug-2023 20:04:05 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id_record' in field list is ambiguous in C:\xampp\htdocs\apirestdinamica\models\get.model.php:308
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(308): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(52): GetModel::getRelDataFilter('tbl_documents ,...', 'document, redor...', 'id_document,doc...', 'id_document', Array, NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(39): GetController::getRelDataFilter('tbl_documents ,...', 'document, redor...', 'id_document,doc...', 'id_document', '1', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 308
+[17-Aug-2023 20:04:38 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id_record' in field list is ambiguous in C:\xampp\htdocs\apirestdinamica\models\get.model.php:308
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(308): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(52): GetModel::getRelDataFilter('tbl_documents ,...', 'document', 'id_document,doc...', 'id_document', Array, NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(39): GetController::getRelDataFilter('tbl_documents ,...', 'document', 'id_document,doc...', 'id_document', '1', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 308
+[17-Aug-2023 20:06:36 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tbl_records.id_document' in 'on clause' in C:\xampp\htdocs\apirestdinamica\models\get.model.php:308
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(308): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(52): GetModel::getRelDataFilter('tbl_documents ,...', 'document, redor...', 'id_document,doc...', 'id_document', Array, NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(39): GetController::getRelDataFilter('tbl_documents ,...', 'document, redor...', 'id_document,doc...', 'id_document', '1', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 308
+[17-Aug-2023 20:08:08 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tbl_records.id_document' in 'on clause' in C:\xampp\htdocs\apirestdinamica\models\get.model.php:308
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(308): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(52): GetModel::getRelDataFilter('tbl_documents ,...', 'document, redor...', 'id_document,doc...', 'id_document', Array, NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(39): GetController::getRelDataFilter('tbl_documents ,...', 'document, redor...', 'id_document,doc...', 'id_document', '1', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 308
+[17-Aug-2023 20:09:53 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tbl_records.id_document' in 'on clause' in C:\xampp\htdocs\apirestdinamica\models\get.model.php:308
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(308): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(52): GetModel::getRelDataFilter('tbl_records, tb...', 'document, redor...', 'id_document,doc...', 'id_document', Array, NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(39): GetController::getRelDataFilter('tbl_records, tb...', 'document, redor...', 'id_document,doc...', 'id_document', '1', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 308
+[17-Aug-2023 20:10:16 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tbl_records.id_redord' in 'on clause' in C:\xampp\htdocs\apirestdinamica\models\get.model.php:308
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(308): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(52): GetModel::getRelDataFilter('tbl_records, tb...', 'redord, documen...', 'id_document,doc...', 'id_document', Array, NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(39): GetController::getRelDataFilter('tbl_records, tb...', 'redord, documen...', 'id_document,doc...', 'id_document', '1', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 308
+[17-Aug-2023 20:20:14 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tbl_records.id_document' in 'on clause' in C:\xampp\htdocs\apirestdinamica\models\get.model.php:308
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(308): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(52): GetModel::getRelDataFilter('tbl_documents,t...', 'document,record', 'id_document,doc...', 'id_document', Array, NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(39): GetController::getRelDataFilter('tbl_documents,t...', 'document,record', 'id_document,doc...', 'id_document', '1', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 308
+[17-Aug-2023 20:20:43 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tbl_records.id_document' in 'on clause' in C:\xampp\htdocs\apirestdinamica\models\get.model.php:308
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(308): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(52): GetModel::getRelDataFilter('tbl_documents,t...', 'document,record', 'id_document,doc...', 'id_document', Array, NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(39): GetController::getRelDataFilter('tbl_documents,t...', 'document,record', 'id_document,doc...', 'id_document', '1', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 308
+[17-Aug-2023 20:25:12 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tbl_records.id_document' in 'on clause' in C:\xampp\htdocs\apirestdinamica\models\get.model.php:309
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(309): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(52): GetModel::getRelDataFilter('tbl_documents,t...', 'document,record', 'id_document,doc...', 'id_document', '1', NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(39): GetController::getRelDataFilter('tbl_documents,t...', 'document,record', 'id_document,doc...', 'id_document', '1', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 309
+[17-Aug-2023 20:26:39 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tbl_records.id_document' in 'on clause' in C:\xampp\htdocs\apirestdinamica\models\get.model.php:310
+Stack trace:
+#0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(310): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirestdinamica\controllers\get.controller.php(52): GetModel::getRelDataFilter('tbl_documents,t...', 'document,record', 'id_document,doc...', 'id_document', '1', NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirestdinamica\routes\services\get.php(39): GetController::getRelDataFilter('tbl_documents,t...', 'document,record', 'id_document,doc...', 'id_document', '1', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirestdinamica\routes\routes.php(37): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirestdinamica\controllers\routes.controller.php(13): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 310
