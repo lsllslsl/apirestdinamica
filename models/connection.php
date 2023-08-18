@@ -63,6 +63,10 @@ class Connection{
 			return null;
 		}else{
 
+			if ($columns[0] == "*") {
+				array_shift($columns);
+			}
+
 			$sum = 0;
 
 			foreach($validate as $key => $value)

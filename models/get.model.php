@@ -18,14 +18,14 @@ class GetModel
 		}
 
 		/*==================================================================
-	Sin ordenar y limitar datos
-	===================================================================*/
+		Sin ordenar y limitar datos
+		===================================================================*/
 
 		$sql = "SELECT $select FROM $table";
 
 		/*==================================================================
-	ORDENAR DATOS SIN LIMITES
-	===================================================================*/
+		ORDENAR DATOS SIN LIMITES
+		===================================================================*/
 
 		if ($orderBy != null && $orderMode != null && $startAt == null && $endAt == null) {
 
@@ -33,8 +33,8 @@ class GetModel
 		}
 
 		/*==================================================================
-	ORDENAR  Y LIMITAR DATOS
-	===================================================================*/
+		ORDENAR  Y LIMITAR DATOS
+		===================================================================*/
 
 		if ($orderBy != null && $orderMode != null && $startAt != null && $endAt != null) {
 
@@ -42,8 +42,8 @@ class GetModel
 		}
 
 		/*==================================================================
-	LIMITAR DATOS SIN ORDENARLOS
-	===================================================================*/
+		LIMITAR DATOS SIN ORDENARLOS
+		===================================================================*/
 
 		if ($orderBy == null && $orderMode == null && $startAt != null && $endAt != null) {
 
@@ -52,7 +52,15 @@ class GetModel
 
 		$stmt = Connection::connect()->prepare($sql);
 
-		$stmt->execute();
+		try {
+
+			$stmt->execute();
+
+		} catch (PDOException $Exception) {
+
+			return null;
+			
+		}
 
 		return $stmt->fetchAll(PDO::FETCH_CLASS);
 	}
@@ -92,23 +100,23 @@ class GetModel
 		}
 
 		/*==================================================================
-	Sin ordenar y limitar datos
-	===================================================================*/
+		Sin ordenar y limitar datos
+		===================================================================*/
 
 		$sql = "SELECT $select FROM $table WHERE $linkToArray[0] = :$linkToArray[0] $linkToText";
 
 		/*==================================================================
-	ORDENAR DATOS SIN LIMITES
-	===================================================================*/
+		ORDENAR DATOS SIN LIMITES
+		===================================================================*/
 
 		if ($orderBy != null && $orderMode != null && $startAt == null && $endAt == null) {
 
 			$sql = "SELECT $select FROM $table WHERE $linkToArray[0] = :$linkToArray[0] $linkToText ORDER BY $orderBy $orderMode";
 		}
 
-		/*==================================================================
-	ORDENAR  Y LIMITAR DATOS
-	===================================================================*/
+			/*==================================================================
+		ORDENAR  Y LIMITAR DATOS
+		===================================================================*/
 
 		if ($orderBy != null && $orderMode != null && $startAt != null && $endAt != null) {
 
@@ -116,8 +124,8 @@ class GetModel
 		}
 
 		/*==================================================================
-LIMITAR DATOS SIN ORDENARLOS
-===================================================================*/
+		LIMITAR DATOS SIN ORDENARLOS
+		===================================================================*/
 
 		if ($orderBy == null && $orderMode == null && $startAt != null && $endAt != null) {
 
@@ -131,14 +139,22 @@ LIMITAR DATOS SIN ORDENARLOS
 			$stmt->bindParam(":" . $value, $equalToArray[$key], PDO::PARAM_STR);
 		}
 
-		$stmt->execute();
+		try {
+
+			$stmt->execute();
+
+		} catch (PDOException $Exception) {
+
+			return null;
+			
+		}
 
 		return $stmt->fetchAll(PDO::FETCH_CLASS);
 	}
 
 	/*==================================================================
-		PETICIONES GET SIN FILTRO ENTRE TABLAS RELACIONADAS
-		===================================================================*/
+	PETICIONES GET SIN FILTRO ENTRE TABLAS RELACIONADAS
+	===================================================================*/
 	static public function getRelData($rel, $type, $select, $orderBy, $orderMode, $startAt, $endAt)
 	{
 
@@ -153,7 +169,7 @@ LIMITAR DATOS SIN ORDENARLOS
 
 				$selectArray = explode(",", $select);
 
-				if (empty(Connection::getColumnsData($value, $selectArray))) {
+				if (empty(Connection::getColumnsData($value, ["*"]))) {
 					return null;
 				}
 
@@ -216,7 +232,15 @@ LIMITAR DATOS SIN ORDENARLOS
 
 			$stmt = Connection::connect()->prepare($sql);
 
-			$stmt->execute();
+			try {
+
+				$stmt->execute();
+
+			} catch (PDOException $Exception) {
+
+				return null;
+
+			}
 
 			return $stmt->fetchAll(PDO::FETCH_CLASS);
 		} else {
@@ -226,21 +250,9 @@ LIMITAR DATOS SIN ORDENARLOS
 	}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 	/*==================================================================
-		PETICIONES GET cON FILTRO ENTRE TABLAS RELACIONADAS
-		===================================================================*/
+	PETICIONES GET CON FILTRO ENTRE TABLAS RELACIONADAS
+	===================================================================*/
 
 	static public function getRelDataFilter($rel, $type, $select, $linkTo, $equalTo, $orderBy, $orderMode, $startAt, $endAt)
 	{
@@ -248,33 +260,13 @@ LIMITAR DATOS SIN ORDENARLOS
 		/*==================================================================
 		ORGANIZAMOS LOS FILTRO
 		===================================================================*/
-		$selectArray = explode(",", $select);
 		$linkToArray = explode(",", $linkTo);
-
-		foreach ($linkToArray as $key => $value) {
-			array_push($selectArray, $value);
-		}
-
-		$selectArray = array_unique($selectArray);
-
-		if (empty(Connection::getColumnsData($value, $selectArray))) {
-			return null;
-		}
-
 		$equalToArray = explode("_", $equalTo);
 		$linkToText = "";
-
-
 
 		if (count($linkToArray) > 1) {
 
 			foreach ($linkToArray as $key => $value) {
-
-				$selectArray = explode(",", $select);
-
-				if (empty(Connection::getColumnsData($value, $selectArray))) {
-					return null;
-				}
 
 				if ($key > 0) {
 
@@ -294,6 +286,12 @@ LIMITAR DATOS SIN ORDENARLOS
 		if (count($relArray) > 1) {
 
 			foreach ($relArray as $key => $value) {
+
+				$selectArray = explode(",", $select);
+
+				if (empty(Connection::getColumnsData($value, ["*"]))) {
+					return null;
+				}
 
 				if ($key > 0) {
 
@@ -348,7 +346,15 @@ LIMITAR DATOS SIN ORDENARLOS
 				$stmt->bindParam(":" . $value, $equalToArray[$key], PDO::PARAM_STR);
 			}
 
-			$stmt->execute();
+			try {
+
+				$stmt->execute();
+
+			} catch (PDOException $Exception) {
+
+				return null;
+				
+			}
 
 			return $stmt->fetchAll(PDO::FETCH_CLASS);
 		} else {
