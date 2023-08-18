@@ -34,11 +34,31 @@ require_once "controllers/get.controller.php";
   /*==================================================================
 	PETICIONES GET SIN FILTRO ENTRE TABLAS RELACIONADAS
 	===================================================================*/
+	
 }elseif (isset($_GET["rel"]) && isset($_GET["type"]) && $table == "relations" && isset($_GET["linkTo"]) && isset($_GET["equalTo"])) {
 	
 	$response -> getRelDataFilter($_GET["rel"], $_GET["type"], $select,  $_GET["linkTo"], $_GET["equalTo"], $orderBy, $orderMode,$startAt, $endAt);
- 
- }else {
+
+
+ /*==================================================================
+	PETICIONES GET PARA EL BUSCADOR SIN RELACIONES
+ ===================================================================*/
+	
+}elseif (!isset($_GET["rel"]) && !isset($_GET["type"]) && isset($_GET["linkTo"]) && isset($_GET["search"])) {
+	
+	$response -> getDataSearch($table, $select, $_GET["linkTo"], $_GET["search"], $orderBy, $orderMode, $startAt, $endAt);
+
+
+ /*==================================================================
+	PETICIONES GET PARA EL BUSCADOR con RELACIONES
+ ===================================================================*/
+
+}elseif (isset($_GET["rel"]) && isset($_GET["type"]) && $table == "relations" && isset($_GET["linkTo"]) && isset($_GET["search"])) {
+
+	$response -> getRelDataSearch($_GET["rel"], $_GET["type"], $select,  $_GET["linkTo"], $_GET["search"], $orderBy, $orderMode,$startAt, $endAt);
+
+}
+else{
 
    /*==================================================================
 	PETICIONES GET SIN FILTRO

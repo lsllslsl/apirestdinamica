@@ -11,8 +11,6 @@ class GetController{
 	static public function getData($table, $select, $orderBy, $orderMode,$startAt, $endAt){
 
 		$response = GetModel::getData($table, $select, $orderBy, $orderMode,$startAt, $endAt);
-		echo '<pre>'; print_r($response); echo '</pre>';
-		return;
 	
 		$return = new GetController();
 		$return -> fncResponse($response);
@@ -60,6 +58,33 @@ class GetController{
 
 	}
 
+
+	/*==================================================================
+	PETICIONES GET PARA EL BUSCADOR SIN  RELACIONES
+	===================================================================*/
+
+	static public function getDataSearch($table, $select, $linkTo, $search, $orderBy, $orderMode, $startAt, $endAt){
+
+		$response = GetModel::getDataSearch($table, $select, $linkTo, $search, $orderBy, $orderMode, $startAt, $endAt);
+	
+		$return = new GetController();
+		$return -> fncResponse($response);
+
+	}
+
+
+	/*==================================================================
+	PETICIONES GET PARA EL BUSCADOR ENTRE TABLAS RELACIONADAS
+	===================================================================*/
+
+	static public function getRelDataSearch($rel, $type, $select, $linkTo, $search, $orderBy, $orderMode, $startAt, $endAt){
+
+		$response = GetModel::getRelDataSearch($rel, $type, $select, $linkTo, $search, $orderBy, $orderMode, $startAt, $endAt);
+	
+		$return = new GetController();
+		$return -> fncResponse($response);
+
+	}
 
 
 
