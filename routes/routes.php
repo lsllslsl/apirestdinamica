@@ -31,6 +31,8 @@ Cuando si se hace una petición a la API
 
 if(count($routesArray) == 2 && isset($_SERVER['REQUEST_METHOD'])){
 
+	$table = explode("?", $routesArray[2][0]);
+
 	/*=============================================
 	Peticiones GET
 	=============================================*/
