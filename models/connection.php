@@ -51,13 +51,27 @@ class Connection{
 
 	}
 
-	static public function getColumnsData($table)
+	static public function getColumnsData($table, $columns)
 	{
 		$db = Connection::infoDatabase()["database"];
 
-		return Connection::connect()
+		$validate = Connection::connect()
 		->query("SELECT COLUMN_NAME AS item FROM information_schema.columns WHERE table_schema = '$db' AND table_name = '$table'")
 		->fetchAll(PDO::FETCH_OBJ);
+
+		if (empty($validate)) {
+			return null;
+		}else{
+
+			$sum = 0;
+
+			foreach($validate as $key => $value)
+			{
+				$sum += in_array($value->item, $columns);
+			}
+
+			return $sum == count($columns) ? $validate : null;
+		}
 	}
 
 	

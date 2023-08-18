@@ -9,9 +9,11 @@ class GetModel{
 	===================================================================*/
 	static public function getData($table, $select, $orderBy, $orderMode, $startAt, $endAt){
 
-	echo '<pre>'; print_r(Connection::getColumnsData($table)); echo '</pre>';
+	$selectArray = explode(",", $select);
 
-	return;
+	if(empty(Connection::getColumnsData($table, $selectArray))){
+		return null;
+	}
 
 	/*==================================================================
 	Sin ordenar y limitar datos
@@ -59,7 +61,20 @@ class GetModel{
 
 	static public function getDataFilter($table, $select, $linkTo, $equalTo, $orderBy, $orderMode, $startAt, $endAt){
 
+		$selectArray = explode(",", $select);
 		$linkToArray = explode(",", $linkTo);
+
+		foreach ($linkToArray as $key => $value) {
+			array_push($selectArray, $value);
+		}
+
+		$selectArray = array_unique($selectArray);
+
+		if(empty(Connection::getColumnsData($table, $selectArray))){
+			return null;
+		}
+
+		
 		$equalToArray = explode("_",$equalTo);
 		$linkToText = "";
 
@@ -133,6 +148,12 @@ LIMITAR DATOS SIN ORDENARLOS
 		if (count($relArray)>1) {
 
 			foreach ($relArray as $key => $value) {
+
+				$selectArray = explode(",", $select);
+
+				if(empty(Connection::getColumnsData($value, $selectArray))){
+					return null;
+				}
 
 				if ($key > 0) {
 
@@ -226,13 +247,33 @@ LIMITAR DATOS SIN ORDENARLOS
 		/*==================================================================
 		ORGANIZAMOS LOS FILTRO
 		===================================================================*/
+		$selectArray = explode(",", $select);
 		$linkToArray = explode(",", $linkTo);
+
+		foreach ($linkToArray as $key => $value) {
+			array_push($selectArray, $value);
+		}
+
+		$selectArray = array_unique($selectArray);
+
+		if(empty(Connection::getColumnsData($value, $selectArray))){
+			return null;
+		}
+
 		$equalToArray = explode("_", $equalTo);
 		$linkToText = "";
+
+		
 
 		if (count($linkToArray)>1) {
 
 			foreach ($linkToArray as $key => $value) {
+
+				$selectArray = explode(",", $select);
+
+				if(empty(Connection::getColumnsData($value, $selectArray))){
+					return null;
+				}
 
 				if ($key > 0) {
 
@@ -319,7 +360,3 @@ LIMITAR DATOS SIN ORDENARLOS
 		}
 	}
 }
-
-?>
-
-
