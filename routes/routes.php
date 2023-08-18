@@ -1,13 +1,16 @@
 <?php
 
-$routesArray = explode("/", $_SERVER['REQUEST_URI']);
+$routesArray = explode("/",$_SERVER['REQUEST_URI']);
+ //echo '<pre>'; print_r($_SERVER['REQUEST_URI']); echo '</pre>';
+// echo '<pre>'; print_r($routesArray); echo '</pre>';
+// return;
 $routesArray = array_filter($routesArray);
 
-/*=============================================
+/*============================================
 Cuando no se hace ninguna petición a la API
 =============================================*/
 
-if(count($routesArray) == 0){
+if(count($routesArray) == 1){
 
 	$json = array(
 
@@ -26,7 +29,9 @@ if(count($routesArray) == 0){
 Cuando si se hace una petición a la API
 =============================================*/
 
-if(count($routesArray) == 1 && isset($_SERVER['REQUEST_METHOD'])){
+if(count($routesArray) == 2 && isset($_SERVER['REQUEST_METHOD'])){
+
+	$table = explode("?", $routesArray[2][0]);
 
 	/*=============================================
 	Peticiones GET
@@ -69,5 +74,3 @@ if(count($routesArray) == 1 && isset($_SERVER['REQUEST_METHOD'])){
 	}
 
 }
-
-

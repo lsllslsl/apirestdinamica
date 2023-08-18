@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [16-Aug-2023 07:51:11 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tbl_records' in 'field list' in C:\xampp\htdocs\apirestdinamica\models\get.model.php:13
 Stack trace:
 #0 C:\xampp\htdocs\apirestdinamica\models\get.model.php(13): PDOStatement->execute()
@@ -780,3 +781,5 @@ Stack trace:
 #5 C:\xampp\htdocs\apirestdinamica\index.php(18): RoutesController->index()
 #6 {main}
   thrown in C:\xampp\htdocs\apirestdinamica\models\get.model.php on line 501
+=======
+>>>>>>> 7acf2f0e42ee2648b76bac560013187ba3bce079

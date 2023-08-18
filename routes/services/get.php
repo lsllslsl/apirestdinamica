@@ -2,7 +2,7 @@
 
 require_once "controllers/get.controller.php";
 
- $table = explode("?", $routesArray[1])[0];
+ $table = explode("?", $routesArray[2])[0];
 
  $select = $_GET["select"] ??  "*";
  $orderBy = $_GET["orderBy"] ??  null;
@@ -67,13 +67,3 @@ else{
     $response -> getData($table, $select, $orderBy, $orderMode,$startAt, $endAt);
 
  }
-
-
-?>
-
-
-
-
-
-
-
